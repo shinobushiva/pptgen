@@ -1,0 +1,3 @@
+# Powerpoint generator
+
+Apache POIを使ってJSONからPowerpointファイルを生成する
