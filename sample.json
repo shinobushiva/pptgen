@@ -1,0 +1,25 @@
+{
+	"pages": [
+		{
+			"contents": [
+				{
+					"type": "image",
+					"url": "https://picsum.photos/300/200",
+					"x": 0,
+					"y": 0,
+					"w": 300,
+					"h": 200
+				},
+				{
+					"type": "text",
+					"text": "こんにちわ世界",
+					"fontSize": 24.0,
+					"x": 0,
+					"y": 0,
+					"w": 300,
+					"h": 200
+				}
+			]
+		}
+	]
+}
