@@ -4,10 +4,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PipedInputStream;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URLConnection;
@@ -74,8 +75,9 @@ public class PptGenerator {
 				});
 			});
 
-			ppt.write(System.out);
-			ppt.close();
+			BufferedOutputStream bos = new BufferedOutputStream(System.out);
+			ppt.write(bos);
+			bos.flush();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
